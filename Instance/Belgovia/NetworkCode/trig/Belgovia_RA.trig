@@ -88,7 +88,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "9d72d12a-f135-437a-83fa-ef3e5b23f41f";
             cim:IdentifiedObject.name  "RD RA1";
             nc:PowerRemedialAction.BiddingZone
-                    <urn:uuid:91e89a38-ca68-44c1-8ed4-a7db8e435f4f>;
+                    <urn:uuid:87fb9f56-fd86-446f-b35d-c0abba19925f>;
             nc:RemedialAction.AppointedToRegion
                     <urn:uuid:56d81c91-4fb8-47a2-9d7c-baa13dedd605>;
             nc:RemedialAction.isCrossBorderRelevant
@@ -117,7 +117,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             nc:GateInputPin.duration       "P0Y0M0DT0H0M0S"^^xsd:duration;
             nc:GateInputPin.logicKind      nc:LogicalOperatorsKind.equals;
             nc:GateInputPin.negate         false;
-            nc:GateInputPin.normalEnabled  "false";
             nc:PinGate.GateOutput          <urn:uuid:b73c5258-2fb6-4e8a-8b0a-61d84a52ee27> .
     
     <urn:uuid:49c6b720-0d02-403f-9954-001725a16235>
@@ -343,15 +342,15 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:30f6377d-5e35-4dd0-a53d-c1992043855e>
             rdf:type                   nc:CountertradeRemedialAction;
             cim:IdentifiedObject.description
-                    "Curative RA: Countertrading, BO:-205.5->-251, GA:-438.25->-392.8";
+                    "Curative RA: Countertrading, BO:-205.5-gt;-251, GA:-438.25-gt;-392.8";
             cim:IdentifiedObject.mRID  "30f6377d-5e35-4dd0-a53d-c1992043855e";
             cim:IdentifiedObject.name  "RA18";
-            nc:CountertradeRemedialAction.gLSKStrategy
-                    nc:GLSKStrategyKind.generatorPmax;
-            nc:CountertradeRemedialAction.shiftMethod
+            nc:CountertradeRemedialAction.method
                     nc:ShiftMethodKind.shared;
+            nc:CountertradeRemedialAction.powerShiftKey
+                    nc:GLSKStrategyKind.generatorPmax;
             nc:PowerRemedialAction.BiddingZone
-                    <urn:uuid:91e89a38-ca68-44c1-8ed4-a7db8e435f4f>;
+                    <urn:uuid:87fb9f56-fd86-446f-b35d-c0abba19925f>;
             nc:RemedialAction.AppointedToRegion
                     <urn:uuid:56d81c91-4fb8-47a2-9d7c-baa13dedd605>;
             nc:RemedialAction.RemedialActionSystemOperator
@@ -431,7 +430,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "fa73cfee-ff54-43cd-816b-51394cd76f0f";
             cim:IdentifiedObject.name  "RD RA1";
             nc:PowerRemedialAction.BiddingZone
-                    <urn:uuid:91e89a38-ca68-44c1-8ed4-a7db8e435f4f>;
+                    <urn:uuid:87fb9f56-fd86-446f-b35d-c0abba19925f>;
             nc:RemedialAction.AppointedToRegion
                     <urn:uuid:56d81c91-4fb8-47a2-9d7c-baa13dedd605>;
             nc:RemedialAction.isCrossBorderRelevant
@@ -486,7 +485,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "12b3c4e6-2104-4499-b003-1248ef533e13";
             cim:IdentifiedObject.name  "Set power on EquivalentInjection to -10 MW";
             nc:EquivalentInjectionAction.EquivalentInjection
-                    <urn:uuid:9dc33660-e284-4c74-bb9a-44604390634e>;
+                    <urn:uuid:7c43d75f-f169-4525-9a55-ef54c6f95f3c>;
             nc:GridStateAlteration.GridStateAlterationCollection
                     <urn:uuid:84477640-5bd9-4076-bfe8-415ae0ef8d6e>;
             nc:GridStateAlteration.PropertyReference
@@ -504,7 +503,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     <urn:uuid:215c0331-cf8e-4499-b9b5-bc3cffd3f3b3>
             rdf:type                       nc:Stage;
             cim:IdentifiedObject.description
-                    "SIPS_UC2_Runback_import. In case of import on TieLine_GA_BO2 decprease the power to 10 MW";
+                    "SIPS_UC2_Runback_import. In case of import on TieLine_GA_BO2 decrease the power to 10 MW";
             cim:IdentifiedObject.mRID      "215c0331-cf8e-4499-b9b5-bc3cffd3f3b3";
             cim:IdentifiedObject.name      "SIPS_UC2_Runback_import.";
             nc:Stage.GridStateAlterationCollection
@@ -536,7 +535,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             cim:IdentifiedObject.mRID  "b591f3b9-e7e6-4625-b1d2-f53dec63ced1";
             cim:IdentifiedObject.name  "Set EI to 10";
             nc:EquivalentInjectionAction.EquivalentInjection
-                    <urn:uuid:9dc33660-e284-4c74-bb9a-44604390634e>;
+                    <urn:uuid:7c43d75f-f169-4525-9a55-ef54c6f95f3c>;
             nc:GridStateAlteration.GridStateAlterationCollection
                     <urn:uuid:d91f1368-bd8c-456a-9088-0dd4b9620b21>;
             nc:GridStateAlteration.PropertyReference
@@ -706,7 +705,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
             nc:GateInputPin.duration        "P0Y0M0DT0H0M0S"^^xsd:duration;
             nc:GateInputPin.logicKind       nc:LogicalOperatorsKind.lessThan;
             nc:GateInputPin.negate          false;
-            nc:GateInputPin.normalEnabled   "true";
             nc:GateInputPin.thresholdValue  "-20"^^xsd:float;
             nc:PinTerminal.Terminal         <urn:uuid:73ae8a3c-8217-9467-638f-cf007f229852>;
             nc:PinTerminal.kind             nc:PinTerminalKind.activePower .

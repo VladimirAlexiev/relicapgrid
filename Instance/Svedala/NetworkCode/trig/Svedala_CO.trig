@@ -54,6 +54,29 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
             nc:Contingency.normalMustStudy  true .
     
+    <urn:uuid:f3a8c241-7b5e-4d92-b1c6-8e3f092a4d71>
+            rdf:type                        nc:OrdinaryContingency;
+            cim:IdentifiedObject.description
+                    "This is an example of an ordinary contingency; Loss of a single demand facility";
+            cim:IdentifiedObject.mRID       "f3a8c241-7b5e-4d92-b1c6-8e3f092a4d71";
+            cim:IdentifiedObject.name       "CO_ConformLoad_1";
+            nc:Contingency.EquipmentOperator
+                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
+            nc:Contingency.normalMustStudy  true .
+    
+    <urn:uuid:c2d7b853-9e46-4f81-a3e5-7d1b4c8f6a29>
+            rdf:type                   cim:ContingencyEquipment;
+            cim:ContingencyElement.Contingency
+                    <urn:uuid:f3a8c241-7b5e-4d92-b1c6-8e3f092a4d71>;
+            cim:ContingencyEquipment.Equipment
+                    <urn:uuid:ebf0cd8b-a357-4e97-aa67-de5b263733d6>;
+            cim:ContingencyEquipment.contingentStatus
+                    cim:ContingencyEquipmentStatusKind.outOfService;
+            cim:IdentifiedObject.description
+                    "The equipment for this contingency is the ConformLoad \"CT72_T1_LAST\" in Svedala; Loss of a single demand facility";
+            cim:IdentifiedObject.mRID  "c2d7b853-9e46-4f81-a3e5-7d1b4c8f6a29";
+            cim:IdentifiedObject.name  "CT72_T1_LAST" .
+    
     <urn:uuid:92d4f3c9-32e1-47fd-8762-d0e9a042c5a3>
             rdf:type                        nc:ExceptionalContingency;
             cim:IdentifiedObject.description

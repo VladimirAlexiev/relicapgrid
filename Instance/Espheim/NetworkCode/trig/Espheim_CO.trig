@@ -18,16 +18,6 @@ PREFIX rdfg:     <http://www.w3.org/2004/03/trix/rdfg-1/>
 PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
 
 <urn:uuid:5898c268-9b32-4ab5-9cfc-64546135a337> {
-    <urn:uuid:66627b36-aecd-4141-ab99-4bd8a74d18a8>
-            rdf:type                        nc:OrdinaryContingency;
-            cim:IdentifiedObject.description
-                    "This is an example of an ordinary contingency;Loss of HVDC converter";
-            cim:IdentifiedObject.mRID       "66627b36-aecd-4141-ab99-4bd8a74d18a8";
-            cim:IdentifiedObject.name       "CO_HVDC1";
-            nc:Contingency.EquipmentOperator
-                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
-            nc:Contingency.normalMustStudy  true .
-    
     <urn:uuid:9d17b84c-33b5-4a68-b8b9-ed5b31038d40>
             rdf:type                        nc:OutOfRangeContingency;
             cim:IdentifiedObject.description
@@ -48,19 +38,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     <urn:uuid:151d6acf-d4fd-4604-9603-f02348603277>;
             nc:Contingency.normalMustStudy  true .
     
-    <urn:uuid:b994b74c-7539-4e1e-9985-7d7a20d55ba9>
-            rdf:type                   cim:ContingencyEquipment;
-            cim:ContingencyElement.Contingency
-                    <urn:uuid:66627b36-aecd-4141-ab99-4bd8a74d18a8>;
-            cim:ContingencyEquipment.Equipment
-                    <urn:uuid:038ce404-30dc-4289-b9db-7076cb870b8e>;
-            cim:ContingencyEquipment.contingentStatus
-                    cim:ContingencyEquipmentStatusKind.outOfService;
-            cim:IdentifiedObject.description
-                    "The equipment for this contingency is the DC-3P-Convert-1 in between Espheim and Svedala (CsConverter); Loss of a single component of a HVDC system (single HVDC converter unit) ";
-            cim:IdentifiedObject.mRID  "b994b74c-7539-4e1e-9985-7d7a20d55ba9";
-            cim:IdentifiedObject.name  "HVDC_1" .
-    
     <urn:uuid:833ea3ad-2c2d-4e73-9165-c3acbe04bbe1>
             rdf:type                   cim:ContingencyEquipment;
             cim:ContingencyElement.Contingency
@@ -73,19 +50,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     "The equipment for this contingency; N-2 on two lines";
             cim:IdentifiedObject.mRID  "833ea3ad-2c2d-4e73-9165-c3acbe04bbe1";
             cim:IdentifiedObject.name  "L4-1" .
-    
-    <urn:uuid:4ec61835-cdf9-4fd5-93ee-37aa4caee337>
-            rdf:type                   cim:ContingencyEquipment;
-            cim:ContingencyElement.Contingency
-                    <urn:uuid:504b48fb-de1f-4f7e-928f-8585daaf7b72>;
-            cim:ContingencyEquipment.Equipment
-                    <urn:uuid:be09fc02-de3f-49e4-aa84-94803bcc5d76>;
-            cim:ContingencyEquipment.contingentStatus
-                    cim:ContingencyEquipmentStatusKind.outOfService;
-            cim:IdentifiedObject.description
-                    "The equipment for this contingency is the DCLine in between Espheim and Svedala (DCLineSegment); Loss of a single component of a HVDC system (line or cable) ";
-            cim:IdentifiedObject.mRID  "4ec61835-cdf9-4fd5-93ee-37aa4caee337";
-            cim:IdentifiedObject.name  "HVDC_2" .
     
     <urn:uuid:62eac668-82a1-4739-8cfc-de929b78ef7e>
             rdf:type                        nc:OrdinaryContingency;
@@ -239,16 +203,6 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
                     "The equipment for this contingency; N-2 on two lines";
             cim:IdentifiedObject.mRID  "816b2763-cefe-41b9-a599-de0d5972cd4c";
             cim:IdentifiedObject.name  "L4-2" .
-    
-    <urn:uuid:504b48fb-de1f-4f7e-928f-8585daaf7b72>
-            rdf:type                        nc:OrdinaryContingency;
-            cim:IdentifiedObject.description
-                    "This is an example of an ordinary contingency;Loss of HVDC line";
-            cim:IdentifiedObject.mRID       "504b48fb-de1f-4f7e-928f-8585daaf7b72";
-            cim:IdentifiedObject.name       "CO_HVDC2";
-            nc:Contingency.EquipmentOperator
-                    <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
-            nc:Contingency.normalMustStudy  true .
     
     <urn:uuid:8cdec4c6-10c3-40c1-9eeb-7f6ae8d9b3fe>
             rdf:type                        nc:OrdinaryContingency;

@@ -24,6 +24,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     
     <urn:uuid:0b23d814-7559-4edf-8c55-40af585209e6>
             rdf:type                     nc:EquivalentGeneratingUnit;
+            nc:Equipment.inService       "true";
             nc:GeneratingUnit.isRamping  "false" .
     
     <urn:uuid:0b7c5ecb-edbb-43d2-8ca8-849c8bc11eda>

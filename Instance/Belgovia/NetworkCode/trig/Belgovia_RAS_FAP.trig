@@ -51,25 +51,25 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
     
     <urn:uuid:51592d48-9943-4e13-9ce3-51b79db43109>
             rdf:type  nc:RemedialActionScheduleDependency;
-            cim:RemedialActionScheduleDependency.mRID
-                    "51592d48-9943-4e13-9ce3-51b79db43109";
             nc:RemedialActionScheduleDependency.ProposedRemedialActionSchedule
                     <urn:uuid:091f8931-34c1-40ad-8e14-af493bcc8bda>;
             nc:RemedialActionScheduleDependency.ReplacedRemedialActionSchedule
                     <urn:uuid:17527637-6099-4ee6-8b21-fea8dfec4c75>;
             nc:RemedialActionScheduleDependency.kind
-                    nc:RemedialActionScheduleDependencyKind.none .
+                    nc:RemedialActionScheduleDependencyKind.none;
+            nc:RemedialActionScheduleDependency.mRID
+                    "51592d48-9943-4e13-9ce3-51b79db43109" .
     
     <urn:uuid:c11ac0dd-2e7d-4320-9abb-b98bfc88f4ee>
             rdf:type  nc:RemedialActionScheduleResponse;
-            cim:RemedialActionScheduleResponse.mRID
-                    "c11ac0dd-2e7d-4320-9abb-b98bfc88f4ee";
             nc:RemedialActionScheduleResponse.RemedialActionSchedule
                     <urn:uuid:17527637-6099-4ee6-8b21-fea8dfec4c75>;
             nc:RemedialActionScheduleResponse.RespondingEntity
                     <urn:uuid:b9fbb881-573b-4e98-9b7b-31f00a45ebe0>;
             nc:RemedialActionScheduleResponse.kind
-                    nc:RemedialActionScheduleResponseKind.accepted .
+                    nc:RemedialActionScheduleResponseKind.accepted;
+            nc:RemedialActionScheduleResponse.mRID
+                    "c11ac0dd-2e7d-4320-9abb-b98bfc88f4ee" .
     
     <urn:uuid:091f8931-34c1-40ad-8e14-af493bcc8bda>
             rdf:type                   nc:RemedialActionSchedule;
